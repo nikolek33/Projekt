@@ -1,0 +1,125 @@
+.container{
+	min-height: 816px;
+}
+
+tr:nth-child(2n) {
+    background: white;
+}
+
+.table-striped>tbody>tr:nth-child(odd)>td,
+.table-striped>tbody>tr:nth-child(odd)>th {
+  	background-color: #d9d9d9;
+
+ }
+.table-striped>tbody>tr:nth-child(1n+0)>td{
+	vertical-align: middle;
+}
+
+#background{
+	position: fixed;
+	height: 100vh;
+	width: 100vw;
+	background-color: #404040;
+	z-index: -1;
+}
+	
+
+#top{
+	background-color: #257a1f;
+	color: white;
+}
+
+.table{
+	width: 70%;
+	margin: 0 auto;
+}
+
+tbody{
+	font-family: 'Roboto', sans-serif;
+}
+thead{
+	font-family: 'Roboto', sans-serif;
+}
+.middle_top_left,.middle_top_right{
+	text-align: center;
+}
+
+.left,.right{
+	text-align: center;
+	font-weight: bold;
+	font-size: 25px;
+}
+
+#bottom{   
+	text-align: center;
+	position: fixed;
+    height: 80px;
+    width: 100%;
+    background-color: #262626;
+    bottom: 0px;
+    left: 0px;
+}
+#text_in_bottom{
+	position: relative;
+	top: 12%;
+	color: #737373;
+	display: block;
+    margin: 0 auto;
+    width: 30%;
+    padding: 20px;
+    border-bottom: 1px solid #737373;
+    border-top: 1px solid #737373;
+}
+#image{
+	font-family: 'Roboto', sans-serif;
+	color: white;
+	margin-left: 15%;
+	padding-bottom: 10px;
+	float: left;
+	width: 300px;
+}
+
+#photo{
+	height: 100px;
+	width: 120px;
+	float: left;
+	margin-right: 20px;
+}
+
+.right::before{
+    position: absolute;
+    content: "";
+    height: 30px;
+    border-left: 1px solid darkgray;
+    margin-left: -40px;
+}
+.middle::before{
+	position: absolute;
+    content: "";
+    height: 30px;
+    border-left: 1px solid darkgray;
+    margin-left: -30px;
+}
+.loader {
+    border: 16px solid #f3f3f3; /* Light grey */
+    border-top: 16px solid #3498db; /* Blue */
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+#loader{
+	position: absolute;
+    left: 44%;
+    top: 40%;
+}
+
+p{
+	margin: 0px -5px 10px;
+}
