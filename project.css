@@ -107,6 +107,9 @@ thead{
     width: 120px;
     height: 120px;
     animation: spin 2s linear infinite;
+    left: 50%;
+    margin-left: -4em;
+    position: relative;
 }
 
 @keyframes spin {
@@ -115,9 +118,10 @@ thead{
 }
 
 #loader{
-	position: absolute;
-    left: 44%;
+    position: fixed;
     top: 40%;
+    width: 100%;
+    text-align: center;
 }
 
 p{
